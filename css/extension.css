@@ -1,0 +1,21 @@
+#main-menu #extension-example-extension-menu-item {
+  background-image: url('../images/menu-icon.svg');
+}
+
+#extension-example-extension-view {
+  height: calc(100% - 7.6rem);
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  top: 7.6rem;
+}
+
+#extension-example-extension-content {
+  position: relative;
+  top: calc(50% - 7.6rem);;
+  transform: translateY(-50%);
+  max-height: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+}
