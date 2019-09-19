@@ -3,14 +3,16 @@
     constructor() {
       super('example-extension');
       this.element = this.addMenuEntry('Example Extension');
+      this.content = '';
+
+      fetch(`/extensions/${this.id}/views/content.html`)
+        .then((res) => res.text())
+        .then((text) => this.content = text)
+        .catch((e) => console.error('Failed to fetch content:', e));
     }
 
     show() {
-      const content = `<div id="extension-example-extension-content">
-          <h1>Hello, world!</h1>
-        </div>`;
-
-      this.element.innerHTML = content;
+      this.element.innerHTML = this.content;
     }
   }
 
