@@ -15,7 +15,17 @@
   top: calc(50% - 7.6rem);;
   transform: translateY(-50%);
   max-height: 100%;
-  text-align: center;
+  text-align: left;
   font-size: 1.6rem;
   color: #fff;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+#extension-example-extension-form-submit {
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
 }

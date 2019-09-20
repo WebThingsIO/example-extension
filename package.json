@@ -1,0 +1,51 @@
+{
+  "name": "example-extension",
+  "display_name": "Example Extension",
+  "version": "0.0.2",
+  "description": "Example extension add-on for Mozilla WebThings Gateway",
+  "author": "Mozilla IoT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "mozilla",
+    "iot",
+    "extension",
+    "example"
+  ],
+  "homepage": "https://github.com/mozilla-iot/example-extension",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozilla-iot/example-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mozilla-iot/example-extension/issues"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SHA256SUMS",
+    "css/extension.css",
+    "example-extension.js",
+    "images/menu-icon.svg",
+    "index.js",
+    "js/extension.js",
+    "manifest.json",
+    "views/content.html"
+  ],
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "type": "extension",
+    "plugin": true,
+    "exec": "{nodeLoader} {path}"
+  }
+}
