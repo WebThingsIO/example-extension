@@ -1,3 +1,22 @@
 <div id="extension-example-extension-content">
-  <h1>Hello, world!</h1>
+  <div id="extension-example-extension-request">
+    <h2>Echo Request</h2>
+    <div id="extension-example-extension-form-content">
+      <label for="key">Key: </label>
+      <input type="text" name="key" id="extension-example-extension-form-key" required>
+      <br>
+      <label for="value">Value: </label>
+      <input type="text" name="value" id="extension-example-extension-form-value" required>
+      <br>
+      <button type="button" id="extension-example-extension-form-submit">Send</button>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div id="extension-example-extension-response">
+    <h2>Echo Response</h2>
+    <pre id="extension-example-extension-response-data"></pre>
+  </div>
 </div>

@@ -1,2 +1,6 @@
+*.swp
 *.tgz
+*~
+/node_modules/
 /package/
+SHA256SUMS
