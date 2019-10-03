@@ -26,17 +26,10 @@
         document.getElementById('extension-example-extension-response-data');
 
       submit.addEventListener('click', () => {
-        fetch(`/extensions/${this.id}/api/example-api?samplekey=samplevalue`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-            Authorization: `Bearer ${window.API.jwt}`,
-          },
-          body: JSON.stringify({[key.value]: value.value}),
-        }).then((res) => {
-          return res.json();
-        }).then((body) => {
+        window.API.postJson(
+          `/extensions/${this.id}/api/example-api`,
+          {[key.value]: value.value}
+        ).then((body) => {
           pre.innerText = JSON.stringify(body, null, 2);
         }).catch((e) => {
           pre.innerText = e.toString();
