@@ -1,7 +1,7 @@
 {
   "name": "example-extension",
   "display_name": "Example Extension",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Example extension add-on for Mozilla WebThings Gateway",
   "author": "Mozilla IoT",
   "main": "index.js",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.5.1"
+    "eslint": "^6.8.0"
   },
   "files": [
     "LICENSE",
