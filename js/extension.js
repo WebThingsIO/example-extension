@@ -4,8 +4,14 @@
       super('example-extension');
       this.addMenuEntry('Example Extension');
 
+      if (!window.Extension.prototype.hasOwnProperty('load')) {
+        this.load();
+      }
+    }
+
+    load() {
       this.content = '';
-      fetch(`/extensions/${this.id}/views/content.html`)
+      return fetch(`/extensions/${this.id}/views/content.html`)
         .then((res) => res.text())
         .then((text) => {
           this.content = text;

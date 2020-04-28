@@ -1,7 +1,7 @@
 {
   "name": "example-extension",
   "display_name": "Example Extension",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Example extension add-on for Mozilla WebThings Gateway",
   "author": "Mozilla IoT",
   "main": "index.js",
