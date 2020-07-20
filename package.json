@@ -7,12 +7,6 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "keywords": [
-    "mozilla",
-    "webthings",
-    "extension",
-    "example"
-  ],
   "homepage": "https://github.com/mozilla-iot/example-extension",
   "license": "MPL-2.0",
   "repository": {
